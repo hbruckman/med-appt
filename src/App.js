@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 
 import LandingPage from './Components/LandingPage/LandingPage';
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/Login/Login';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
